@@ -5,7 +5,9 @@
 from __future__ import division, unicode_literals
 
 """
-This module contains an algorithm to solve the Linear Assignment Problem
+This module contains an algorithm to solve the Linear Assignment Problem.
+It has the same functionality as linear_assignment.pyx, but is much slower
+as it is vectorized in numpy rather than cython
 """
 
 
@@ -19,6 +21,7 @@ __date__ = "Jan 28, 2013"
 import numpy as np
 
 from six.moves import range
+
 
 class LinearAssignment(object):
     """
