@@ -130,7 +130,7 @@ def release_github(ctx: Context, version: str) -> None:
     desc = "\n".join(tokens[1:]).strip()
     payload = {
         "tag_name": f"v{version}",
-        "target_commitish": "master",
+        "target_commitish": "main",
         "name": f"v{version}",
         "body": desc,
         "draft": False,
