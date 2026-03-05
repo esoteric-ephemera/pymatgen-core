@@ -4,6 +4,7 @@ name: test
 
 on:
   push:
+    branches: ["*"]
     paths:
       [
         "src/**/*.*",
@@ -13,6 +14,7 @@ on:
         "setup.py",
       ]
   pull_request:
+    branches: ["*"]
     paths:
       [
         "src/**/*.*",
